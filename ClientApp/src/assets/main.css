@@ -1,0 +1,76 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: var(--color-green);
+  transition: 0.4s;
+}
+
+.red {
+  color: var(--color-red);
+}
+
+.select-button {
+  padding: 0.1rem;
+  background-color: var(--color-green);
+  border-color: var(--color-border);
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.select-button:hover {
+  background-color: var(--color-green-dark);
+}
+
+.remove-button {
+  padding: 0.1rem;
+  background-color: var(--color-red);
+  border-color: var(--color-border);
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: var(--color-red-dark);
+}
+
+.misc-button {
+  padding: 0.1rem;
+  background-color: var(--color-yellow);
+  border-color: var(--color-border);
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.misc-button:hover {
+  background-color: var(--color-yellow-dark);
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: var(--color-green-transparent);
+  }
+}
+
+@media (min-width: 1px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: block;
+  }
+}
